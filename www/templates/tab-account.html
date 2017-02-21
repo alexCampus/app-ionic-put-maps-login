@@ -1,0 +1,8 @@
+<ion-view view-title="Account">
+  <ion-content ng-controller="MapCtrl">
+    <div id="map" data-tap-disabled="true"></div>
+    <script type="text/javascript">
+    	google.maps.event.addDomListener(document.getElementById("map"), 'load', $scope.initialise(45.18554,5.7282689));
+    </script>
+  </ion-content>
+</ion-view>

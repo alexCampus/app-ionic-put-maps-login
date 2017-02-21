@@ -1,0 +1,32 @@
+<ion-view view-title="{{title}}">
+  <ion-content class="padding">
+    <img ng-src="{{user.avatar}}" style="width: 64px; height: 64px">
+    <h1>{{title}}</h1>
+
+    <p><strong>Adress</strong>: <br>{{user.adress}}</p>
+    <p><strong>Age</strong>: <br>{{user.age}}</p>
+    <p><strong>Phone</strong>:<br>{{user.phone}}</p>
+    <a href="#/tab/users"><button>Revenir à l'Accueil</button></a>
+    <div id="map" data-tap-disabled="true"></div>
+    
+    <form ng-submit="putdata(age, telephone, adress); ">		
+	
+		<label class="item item-input">
+			<span class="input-label">age</span>
+			<input type="number" name="age" placeholder="Age" required="required" ng-model="age">
+		</label>
+		<label class="item item-input">
+					<span class="input-label">telephone</span>
+					<input type="phonenumber" required="required" name="telephone" placeholder="Telephne" ng-model="telephone">
+		</label>
+		<label class="item item-input">
+					<span class="input-label">adress</span>
+					<input type="text" required="required" name="adress" placeholder="Adress" ng-model="adress">
+		</label>
+		<button  class="button button-full button-positive" type="submit">
+    		Envoyer
+  		</button>
+	</form>
+    
+  </ion-content>
+</ion-view>

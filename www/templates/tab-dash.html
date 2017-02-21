@@ -1,0 +1,19 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+      <div class="list list-inset">
+        <form ng-submit="sendData(username,password)">
+          <label class="item item-input">
+              <input type="text" placeholder="Username" name="username" ng-model="username">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" name="password" ng-model="password">
+          </label>
+          <button  class="button button-full button-positive" type="submit">
+        Login
+      </button>
+        </form>
+      </div>
+      
+  
+  </ion-content>
+</ion-view>
